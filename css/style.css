@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html{
+  font-size: 10px;
+  --primaryFont:"PT Serif", serif;
+}
+body{
+    font-family:var(--primaryFont); 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+}
+.logo{
+  margin-top: 2rem;
+}
+/* Header Area */
+header{
+  background-color: #FFF5F5;
+}
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Navigation Area */
+.navigation-area{
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+ margin-top: 2rem;
+}
+ul li a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 12rem;
+  font-weight: 400;
+  color: rgb(25, 26, 26);
+  font-family: var(--primaryFont);
+}
+ul li a:hover{
+  color: #EE6567;
+}
+.active{
+  color: #EE6567;
+}
+
+.btn{
+  margin-top: 6rem;
+  padding: 15px 20px;
+  background: #EE6567;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-family: var(--primaryFont);
+}
+
+/* Hero Area */
+.hero{
+  background-color: #FFF5F5;
+}
+.hero-wrapper{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-content h1{
+   font-size: 4.5rem;
+  line-height: 6.3rem;
+  font-weight: 400;
+  color: rgb(25, 26, 26);
+    font-family: var(--primaryFont);
+}
+.hero-content p{
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: rgb(74, 74, 74);
+  font-weight: 400;
+    font-family: var(--primaryFont);
+}
+.btn-1{
+    padding: 15px 30px;
+  background: #EE6567;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+    font-weight: 600;
+  font-family: var(--primaryFont);
+}
+
+.about,.service,.contact{
+   background-color: #FFF5F5;
+   text-align: center;
+   padding: 60px 0;
+}
+
+.about-mission{
+   background-color: #FFF5F5;
+   padding: 60px 0;
+}
+.about h2,.service h2, .contact h2{
+  font-family: var(--primaryFont);
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 6.3rem;
+}
+.about-wrapper, .mission-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.about-content h2,.mission-wrapper h2, .our-service h2{
+   font-family: var(--primaryFont);
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: rgb(25,26,26);
+}
+
+.about-content h4 ,.mission-content h4, .our-services h4{
+    font-family: var(--primaryFont);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: rgb(74, 74, 74);
+}
+.about-content p, .mission-content p,.service p{
+  font-family: var(--primaryFont);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: rgb(74, 74, 74);
+}
+
+
+.our-services,.our-services{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.our-service,.our-contact{
+text-align: center;
+}
+.our-contact h3{
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: rgb(25, 26, 26);
+  font-weight: 400;
+    font-family: var(--primaryFont);
+}
+.our-contact p{
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: rgb(25, 26, 26);
+  font-weight: 400;
+    font-family: var(--primaryFont);
+}
+.our-contact h5{
+    font-family: var(--primaryFont);
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: rgb(25,26,26);
+}
+.input-form{
+  display: flex;
+  gap: 15px;
+  padding: 0 4rem;
+  margin-bottom: 2rem;
+}
+.input-form input{
+  width: 100%;
+  padding: 10px 15px;
+}
+.input-email{
+  padding: 0 4rem;
+}
+.input-email input{
+  width: 100%;
+   padding: 10px 15px;
+    margin-bottom: 2rem;
+}
+.input-email textarea{
+  width: 100%;
+}
+
+/* Responsive CSS */
+
+@media (max-width:940px) {
+  .header-wrapper,.hero-wrapper,.about-wrapper,.our-services,.mission-wrapper{
+    padding: 0 30px;
+  }
+}
+@media (max-width:860px) {
+  html{
+    font-size: 8px;
+  }
+  .hero-wrapper{
+    flex-direction: column;
+  }
+  .hero-content{
+    text-align: center;
+  }
+  .about-wrapper{
+     flex-direction: column;
+  }
+  .about-content h2{
+    text-align: center;
+  }
+  .mission-wrapper{
+    flex-direction: column;
+  }
+  .mission-content h2{
+    text-align: center;
+  }
+  .mission-img{
+    max-width: 100%;
+  }
+}
+@media (max-width:720px) {
+  .header-wrapper,.navigation-area{
+    flex-direction: column;
+  }
+  .btn{
+    margin-top: 1rem;
+    display: block;
+    margin: 0 auto;
+  }
+  ul li a{
+    font-size: 2.6rem;
+  }
+  .hero-content h1{
+    font-size: 3.8rem;
+  }
+  .our-services{
+    flex-direction: column;
+  }
+  .service p{
+    padding: 0 20px;
+  }
+}
+@media (max-width:500px) {
+  .our-contact h3{
+    margin-top: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .hero-content h1{
+    font-size: 2.8rem;
+  }
+  .btn,.btn-1{
+    display: none;
+  }
+}
